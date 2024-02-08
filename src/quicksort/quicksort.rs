@@ -29,11 +29,11 @@ mod tests {
     use crate::quicksort::quick_sort;
     #[test]
     fn test_quick_sort() {
-        // Arrange
+        //Arrange
         let mut arr = vec![9, 3, 7, 4, 69, 420, 42];
-        // Act
+        //Act
         quick_sort(&mut arr);
-        // Assert
+        //Assert
         assert_eq!(arr, vec![3, 4, 7, 9, 42, 69, 420]);
     }
 }

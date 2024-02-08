@@ -6,8 +6,6 @@ pub fn quick_sort(arr: &mut [i32]) {
     let pivot_idx = partition(arr, 0, len - 1);
     quick_sort(&mut arr[0..pivot_idx]);
     quick_sort(&mut arr[pivot_idx + 1..len]);
-
-    println!("{:?}", arr);
 }
 
 fn partition(arr: &mut [i32], low: usize, high: usize) -> usize {
@@ -36,8 +34,6 @@ mod tests {
         // Act
         quick_sort(&mut arr);
         // Assert
-
-        println!("{:?}", arr);
         assert_eq!(arr, vec![3, 4, 7, 9, 42, 69, 420]);
     }
 }
